@@ -418,7 +418,7 @@ def hist_targetbinaria(var, target, nombre_eje):
     target_num = [int(x) for x in target]
 
     # Crear una figura para el gráfico con un tamaño de 8x6 pulgadas
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(2, 1))
 
     # Crear un gráfico de densidad (Kernel Density Estimation) para 'var' cuando 'target' es igual a 0
     sns.kdeplot(var[[x == 0 for x in target_num]], label='target 0', fill=True)
